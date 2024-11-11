@@ -1,0 +1,175 @@
+/* About Page Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px 20px;
+    height: calc(100vh - 60px); /* Centers content below the header */
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Larger Text on Left */
+.about .text {
+    flex: 1;
+    padding-right: 300px; /* Space between text and image */
+}
+
+.about h2 {
+    font-size: 2.5em; /* Increase heading size */
+    color: #008080; /* Teal color for heading */
+}
+
+.about p {
+    font-size: 1.2em; /* Increase paragraph text size */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Larger Image on Right */
+.about img {
+    max-width: 250px; /* Increase image size */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 128, 128, 0.2);
+}
+
+/* Header Styling (matching Contact Me page) */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Example background color */
+}
+
+.header-container h1 {
+    font-size: 1.8em;
+    color: teal;
+}
+
+.header-container nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header-container nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.header-container nav ul li a.active {
+    color: teal;
+    border-bottom: 2px solid teal; /* Indicator for active page */
+}
+
+/* Contact Form Container Styling */
+.contact-container {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info Styling */
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.contact-info h3 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    flex: 2;
+    padding: 20px;
+    border-left: 2px solid #f0f0f0;
+}
+
+.contact-form h2 {
+    font-size: 1.5em;
+    color: #4a3b8a; /* Purple color for heading */
+    margin-bottom: 5px;
+}
+
+.contact-form p {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Form Fields Styling */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 0.8em;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+/* Submit Button Styling */
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4a3b8a; /* Purple button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #392a6f;
+}
+
+/* Form Footer Styling */
+.form-footer {
+    text-align: right;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 10px;
+}
+
+.form-footer span {
+    color: #22c55e; /* Green color for SheetDB Forms text */
+}

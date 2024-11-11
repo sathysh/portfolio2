@@ -1,0 +1,41 @@
+/* Header Container Styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+}
+
+/* Logo Styling */
+.header-container h1 {
+    font-size: 1.8em;
+    color: teal; /* Adjust color if needed */
+    margin: 0;
+}
+
+/* Navigation Styling */
+.header-container nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.header-container nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Active Link Styling */
+.header-container nav ul li a.active {
+    color: teal;
+    border-bottom: 2px solid teal; /* Underline effect */
+}
+
+.header-container nav ul li a:hover {
+    color: teal;
+}

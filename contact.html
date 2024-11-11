@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="header.css"> <!-- Link to your existing header.css file for consistent styling -->
+</head>
+<body>
+    <!-- Header Section (exactly as in previous pages) -->
+    <header>
+        <div class="header-container">
+            <h1>SATHYSHKUMAR RG</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="concepts.html">Concepts Learned</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li> <!-- Active link styling for Contact page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Address</h3>
+            <p>Room No. 509 <br>
+            Manoranjitham Hostel<br>
+            SRM Institute of Science and<br>
+            Technology</p>
+
+            <h3>Phone</h3>
+            <p>+91 9344166481</p>
+
+            <h3>Email</h3>
+            <p>sg2593@srmist.edu.in<br>
+            sathysh007@gmail.com</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send me a message</h2>
+            <p>Have a question or need assistance? Feel free to reach out!</p>
+            <form>
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+
+                <label for="contact">Contact</label>
+                <input type="text" id="contact" name="contact">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div class="form-footer">
+                <p>We use <span>SheetDB Forms</span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

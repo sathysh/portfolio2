@@ -1,0 +1,26 @@
+/* Main Content Area */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.concept {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.1); /* Light blue shadow */
+}
+
+.concept .text {
+    flex: 1;
+}
+
+.concept img {
+    max-width: 150px;
+    margin-left: 20px;
+    border-radius: 8px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - SATHYSHKUMAR</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>SATHYSHKUMAR RG</h1> <!-- This is your logo text -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="about.html" class="about-link">About Me</a></li>
+                <li><a href="concepts.html" class="concepts-link">Concepts Learned</a></li>
+                <li><a href="achievements.html" class="achievements-link">Achievements</a></li>
+                <li><a href="contact.html" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="home-page">
+    <section class="intro">
+        <h1>Hi, I'm SATHYSHKUMAR</h1>
+        <p class="intro-text">A student at SRM University with a keen interest in Artificial Intelligence and Machine learning.<br>
+        Welcome to my Portfolio!</p>
+        
+        <div class="buttons">
+            <a href="https://github.com/sathysh" class="button">GitHub</a>
+            <a href="https://www.linkedin.com/in/sathyshkumar-rg-385123338" class="button">LinkedIn</a>
+        </div>
+    </section>
+    <section class="animated-image">
+        <img src="images/animated_programmer.png" alt="Animated Programmer">
+    </section>
+</main>
+
+<!-- JavaScript for active link -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Remove any existing active classes
+    document.querySelectorAll(".header-container nav ul li a").forEach(link => link.classList.remove("active"));
+
+    // Add active class based on the current page
+    if (currentPage === "index.html" || currentPage === "") {
+      document.querySelector(".home-link").classList.add("active");
+    } else if (currentPage === "about.html") {
+      document.querySelector(".about-link").classList.add("active");
+    } else if (currentPage === "concepts.html") {
+      document.querySelector(".concepts-link").classList.add("active");
+    } else if (currentPage === "achievements.html") {
+      document.querySelector(".achievements-link").classList.add("active");
+    } else if (currentPage === "contact.html") {
+      document.querySelector(".contact-link").classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>

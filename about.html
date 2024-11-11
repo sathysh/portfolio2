@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - SATHYSHKUMAR</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>SATHYSHKUMAR RG</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="about.html" class="about-link">About Me</a></li>
+                <li><a href="concepts.html" class="concepts-link">Concepts Learned</a></li>
+                <li><a href="achievements.html" class="achievements-link">Achievements</a></li>
+                <li><a href="contact.html" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="about">
+    <div class="text">
+        <h2>Hello, I'm SATHYSHKUMAR!</h2>
+        <p>Currently, I'm a Computer Science Engineering student at SRM University, specializing in Artificial Intelligence and Machine Learning. I'm passionate about understanding the complexities of Artificial Intelligence and Machine Learning and developing skills to make the digital world a better place. Apart from academics, I enjoy exploring new technologies and enhancing my problem-solving abilities.</p>
+    </div>
+    <img src="images/profile_picture.jpg" alt="Profile Picture">
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll(".header-container nav ul li a").forEach(link => link.classList.remove("active"));
+
+    if (currentPage.includes("about.html")) document.querySelector(".about-link").classList.add("active");
+  });
+</script>
+
+</body>
+</html>

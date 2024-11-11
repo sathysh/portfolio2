@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - Girijesh</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="achievements.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Girijesh</h1> <!-- This is your logo text -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="about.html" class="about-link">About Me</a></li>
+                <li><a href="concepts.html" class="concepts-link">Concepts Learned</a></li>
+                <li><a href="achievements.html" class="achievements-link">Achievements</a></li>
+                <li><a href="contact.html" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<main>
+    <h1>Achievements</h1>
+    
+    <!-- Achievements Section Layout similar to Concepts Learned page -->
+    <section class="achievement">
+        <div class="text">
+            <h2>Hackathon</h2>
+        </div>
+        <img src="images/certificate1.JPG" alt="Certificate 1">
+    </section>
+
+    <section class="achievement">
+        <div class="text">
+            <h2>C++ course on udemy</h2>
+        </div>
+        <img src="images/certificate2.JPG" alt="Certificate 2">
+    </section>
+
+    <section class="achievement">
+        <div class="text">
+            <h2>Data structures in C</h2>
+        </div>
+        <img src="images/certificate3.JPG" alt="Certificate 3">
+    </section>
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Remove any existing active classes
+    document.querySelectorAll(".header-container nav ul li a").forEach(link => link.classList.remove("active"));
+
+    // Add active class based on the current page
+    if (currentPage === "index.html" || currentPage === "") {
+      document.querySelector(".home-link").classList.add("active");
+    } else if (currentPage === "about.html") {
+      document.querySelector(".about-link").classList.add("active");
+    } else if (currentPage === "concepts.html") {
+      document.querySelector(".concepts-link").classList.add("active");
+    } else if (currentPage === "achievements.html") {
+      document.querySelector(".achievements-link").classList.add("active");
+    } else if (currentPage === "contact.html") {
+      document.querySelector(".contact-link").classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>

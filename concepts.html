@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concepts Learned</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="concepts.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <h1>Girijesh</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="home-link">Home</a></li>
+                <li><a href="about.html" class="about-link">About Me</a></li>
+                <li><a href="concepts.html" class="concepts-link">Concepts Learned</a></li>
+                <li><a href="achievements.html" class="achievements-link">Achievements</a></li>
+                <li><a href="contact.html" class="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Concepts Learned</h1>
+        
+        <section class="concept">
+            <div class="text">
+                <h2>Dynamic Memory Allocation</h2>
+                <p>Dynamic memory allocation allows a program to allocate memory at runtime. This is essential in scenarios where the size of data structures (like arrays or linked lists) is unknown at compile time. Common functions for dynamic memory allocation in C/C++ include malloc(), calloc(), realloc(), and free().</p>
+            </div>
+            <img src="images/dynamic_memory.png" alt="Dynamic Memory Allocation Diagram">
+        </section>
+
+        <section class="concept">
+            <div class="text">
+                <h2>Stacks & Queues</h2>
+                <p>Stacks and queues are linear data structures used to manage collections of elements. A stack follows a Last-In-First-Out (LIFO) principle, while a queue follows a First-In-First-Out (FIFO) principle. These structures are widely used in algorithms and process management.</p>stacks_queues.png
+            </div>
+            <img src="images/stacks_queues.png" alt="Stacks & Queues Diagram">
+        </section>
+
+        <section class="concept">
+            <div class="text">
+                <h2>Linked Lists</h2>
+                <p>A linked list is a linear data structure where elements are not stored at contiguous memory locations. Each element, or node, points to the next one, allowing for dynamic insertion and deletion. Linked lists come in various forms like singly linked, doubly linked, and circular linked lists.</p>
+            </div>
+            <img src="images/linked_lists.png" alt="Linked Lists Diagram">
+        </section>
+
+        <section class="concept">
+            <div class="text">
+                <h2>Trees</h2>
+                <p>Trees are hierarchical data structures consisting of nodes, with a single root node and subnodes that form a parent-child relationship. Common tree types include binary trees, binary search trees, and AVL trees. Trees are used in applications like database indexing and file system hierarchies.</p>
+            </div>
+            <img src="images/trees.png" alt="Trees Diagram">
+        </section>
+</main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll(".header-container nav ul li a").forEach(link => link.classList.remove("active"));
+
+    if (currentPage.includes("concepts.html")) document.querySelector(".concepts-link").classList.add("active");
+  });
+</script>
+
+</body>
+</html>

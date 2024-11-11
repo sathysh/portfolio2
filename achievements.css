@@ -1,0 +1,30 @@
+/* Main Content Area */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.1); /* Light blue shadow */
+}
+
+.achievement .text {
+    flex: 1;
+}
+
+.achievement img {
+    max-width: 250px; /* Increased size for certificates */
+    margin-left: 20px;
+    border-radius: 8px;
+}
+
+.achievement h2 {
+    color: #008080; /* Teal color for titles */
+}
